@@ -1,0 +1,849 @@
+  .allow-button{
+        height: 20px;
+      width: 104px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 10px;
+      border-radius: 3px;
+      border: 1px solid green;
+      background-color: green;
+  }
+
+
+form{
+    font-size: 16px;
+  }
+    
+/* Reset CSS pour réinitialiser les styles par défaut des navigateurs */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Styles généraux pour le body */
+body {
+font-family: 'Arial', sans-serif;
+
+color: #3e2723; /* Marron foncé */
+line-height: 1.6;
+font-family:  sans-serif;
+}
+
+/* Barre de navigation */
+.header-class {
+background-color: #d7ccc8; /* Marron clair */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 60px;
+padding: 0 5%;
+width: 100%;
+z-index: 1000;
+}
+
+.header-class .logo a {
+font-size: 30px;
+color: #4e342e; /* Brun */
+text-decoration: none;
+}
+
+.header-class .logo a span {
+color: #bf360c; /* Rouge profond */
+}
+
+.menu {
+display: flex;
+align-items: center;
+}
+
+
+.btn-reservation {
+color: #fff;
+font-size: 16px;
+border: 2px solid #bf360c; /* Rouge profond */
+padding: 8px 20px;
+transition: 0.3s;
+font-weight: bolder;
+text-decoration: none;
+border-radius: 20px;
+background-color: #bf360c; /* Rouge profond */
+}
+
+.btn-reservation span {
+color: #fff;
+}
+
+.btn-reservation:hover {
+background-color: #6d4c41; /* Brun plus foncé au survol */
+}
+
+/* Barre de recherche */
+#searchContainer {
+background-color: rgba(255, 255, 255, 0.9);
+color: #3e2723; /* Marron foncé */
+padding: 20px 0;
+width: 60%;
+height: 28%;
+text-align: center;
+position: relative;
+top: 80px;
+left: 20%;
+font-weight: bold;
+font-size: 20px;
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#citySelect {
+background-color: rgba(255, 255, 255, 0.9);
+color: #3e2723;
+padding: 15PX 10PX;
+text-align: center;
+position: relative;
+top: 5%;
+left: 50%;
+font-weight: bold;
+font-size: 95%;
+width: 25%;
+border-radius: 10px;
+margin: 5px;
+}
+#searchButton,#searchButtonnom {
+color: #4e342e;
+/* font-size: 16px; */
+padding: 6px 11px;
+/* transition: 0.3s; */
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 15px;
+Position: relative;
+border:none;
+margin-right: 5%;
+
+
+}
+
+#searchButton:hover,#searchButtonnom:hover {
+background-color: #4e342e;
+color: #fff;
+
+}
+
+
+
+/* Section de propositions de musée */
+.category {
+text-align: center;
+margin: 3rem 0;
+}
+
+.heading {
+font-size: 2.5rem;
+color: #bf360c; /* Rouge profond */
+}
+
+.box-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.box {
+width: 25%;
+padding: 1rem;
+margin: 4rem 0;
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+transition: 0.5s;
+background: #fff;
+}
+
+.box:hover {
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.category img {
+height: 10rem;
+width: 10rem;
+margin: 1rem 0;
+margin-bottom: 1rem;
+}
+
+.category h1 {
+
+position: relative;
+top: 4rem;
+text-align: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+font-size: 1.5rem;
+padding: 1.5rem;
+color: #4e342e !important;
+
+MARGIN: 2rem;
+}
+#formnom{
+position: relative;
+top: 1.5rem;
+}
+
+
+/* Styles pour les écrans de petite taille */
+@media (max-width: 768px) {
+.header-class {
+height: auto;
+padding: 10px 5%;
+}
+
+.header-class .logo a {
+font-size: 25px;
+}
+
+.menu {
+display: none;
+}
+
+.responsive-menu {
+display: block;
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+}
+
+.container {
+width: 95%;
+padding: 20px;
+top: 0;
+left: 0;
+transform: none;
+}
+
+.box {
+width: 100%;
+margin: 20px 0;
+padding: 20px;
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.category h1 {
+font-size: 30px;
+}
+
+.category img {
+height: auto;
+width: 100%;
+margin: 10px 0;
+border-radius: 10px;
+}
+}
+
+/* Styles pour les écrans de taille moyenne à grande */
+@media (min-width: 769px) {
+.header-class {
+height: 60px;
+}
+
+.header-class .logo a {
+font-size: 30px;
+}
+
+.menu {
+display: flex;
+}
+
+.responsive-menu {
+display: none;
+}
+}
+
+
+
+
+
+#home {
+            background: linear-gradient(rgba(0,0,0,0.1),#333), url("./paris.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        #home h2 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            -webkit-text-stroke: #fff 0.05px;
+            color: transparent;
+            text-transform: lowercase;
+        }
+        #home h4 {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        #home p {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 15px;
+            padding-left: 11%;
+        }
+        .home-btn {
+            margin-bottom: 20px ;
+            color: #fff;
+        }
+        .navbar-brand {
+            font-size: 25px;
+            color: #b1702f;
+        }
+        .navbar-brand span {
+            color: #d07214;
+        }
+        .custom-btn {
+            color: #fff !important;
+            font-size: 14px !important;
+            border: 2px solid #d07214 !important;
+            padding: 5px 20px !important;
+            transition: 0.3s !important;
+            background-color: #100f0e !important;
+        }
+        .custom-btn:hover {
+            background-color: #d07214 !important;
+        }
+        .btn {
+            color: #f9ece0 !important;
+            background-color: #100c0c !important;
+            border: #d07214 !important;
+        }
+        .btn:hover {
+            background-color: #d07214 !important;
+        }
+        .icon{
+            display: flex;
+            flex-direction: row;    
+        }
+        #contact1{
+            height: 90vh;
+            width: 100%;
+            text-align: center;
+        }
+        #contact1 .p{
+            align-items: center;
+        }
+        #contact {
+            padding: 0 10%;
+            margin-bottom: 50px;
+            height: 80%;
+        }
+        .leftandright{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        #contact form {
+            background-color:#999;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .left-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .left-right .left , .left-right {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+        }
+        #contact form label {
+            font-size: 14px;
+            padding: 10px 0;
+            font-weight: 600
+        }
+        #contact form input {
+            padding: 10px;
+            outline: 0;
+            border: 1px solid #999;
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+            outline: 0;
+            width: 100%;
+            padding: 10px;
+        }
+        #contact form input:focus , textarea:focus {
+            border: 1px solid #d9a729;
+        }
+        iframe {
+            height: 90%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        #contact button {
+            width: fit-content;
+            padding: 8px 40px;
+            background-color: #111;
+            border: 1px solid #111;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+            align-items: center;
+        }
+        #contact button:hover {
+            letter-spacing: 1px;
+            background-color: #d07214;
+        }
+        /* Styles de base pour le footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+        }
+        /* Styles pour les icônes de réseaux sociaux */
+        .social-icons img{
+            height: 40px;
+            width:40px ;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+        }
+        /* Styles pour le numéro de téléphone */
+        .phone {
+            font-size: 18px;
+        }
+        .question{
+            font-weight: bold;
+            color: #100c0c;
+        }
+        /* Styles spécifiques aux petits écrans */
+        @media (max-width: 700px) {
+            .social-icons {
+                margin-bottom: 10px;
+            }
+            .social-icons a {
+                font-size: 20px;
+            }
+            .phone {
+                font-size: 11px;
+            }
+        }
+        #telephone {
+            display: none; /* Le numéro est initialement masqué */
+        }
+        img:hover + #telephone {
+            display: inline; /* Afficher le numéro lorsque l'image est survolée */
+            text-decoration: none;
+            color: white;
+        }
+        .question p {
+            font-size: 1em; /* Taille de police relative */
+            margin: 2%;    /* Marge relative en pourcentage */
+        }
+
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("./paris.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  
+}
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.05px;
+    color: transparent;
+    text-transform: lowercase;
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-left: 11%;
+}
+.home-btn {
+    margin-bottom: 20px ;
+    color: #fff;
+}
+.navbar-brand {
+    font-size: 25px;
+    color: #b1702f;
+}
+.navbar-brand span {
+    
+    color: #d07214;
+}
+
+
+.custom-btn {
+    color: #fff !important;
+    font-size: 14px !important;
+    border: 2px solid #d07214 !important;
+    padding: 5px 20px !important;
+    transition: 0.3s !important;
+    background-color: #100f0e !important;
+}
+
+.custom-btn:hover {
+    background-color: #d07214 !important;
+}
+
+.btn {
+    color: #f9ece0 !important;
+    background-color: #100c0c !important;
+    border: #d07214 !important;
+}
+
+.btn:hover {
+    background-color: #d07214 !important;
+}
+.icon{
+display: flex;
+flex-direction: row;    
+
+}
+
+       header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100; 
+        }
+        header a{
+            text-decoration: none;
+        }
+        #home {
+            background: linear-gradient(rgba(0,0,0,0.1),#333), url("./paris.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        #home h2 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            -webkit-text-stroke: #fff 0.05px;
+            color: transparent;
+            text-transform: lowercase;
+        }
+        #home h4 {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        #home p {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 15px;
+            padding-left: 11%;
+        }
+        .home-btn {
+            margin-bottom: 20px ;
+            color: #fff;
+        }
+        .navbar-brand {
+            font-size: 25px;
+            color: #b1702f;
+        }
+        .navbar-brand span {
+            color: #d07214;
+        }
+        .custom-btn {
+            color: #fff !important;
+            font-size: 14px !important;
+            border: 2px solid #d07214 !important;
+            padding: 5px 20px !important;
+            transition: 0.3s !important;
+            background-color: #100f0e !important;
+        }
+        .custom-btn:hover {
+            background-color: #d07214 !important;
+        }
+        .btn {
+            color: #f9ece0 !important;
+            background-color: #100c0c !important;
+            border: #d07214 !important;
+        }
+        .btn:hover {
+            background-color: #d07214 !important;
+        }
+        .icon{
+            display: flex;
+            flex-direction: row;    
+        }
+        #contact1{
+            height: 90vh;
+            width: 100%;
+            text-align: center;
+        }
+        #contact1 .p {
+            align-items: center;
+        }
+
+        #contact {
+            padding: 0 10%;
+            margin-bottom: 50px;
+            height: 80%;
+        }
+
+        .leftandright {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #contact form {
+            background-color: #999;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .left-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .left-right .left,
+        .left-right {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+        }
+
+        #contact form label {
+            font-size: 14px;
+            padding: 10px 0;
+            font-weight: 600;
+        }
+
+        #contact form input {
+            padding: 10px;
+            outline: 0;
+            border: 1px solid #999;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+            outline: 0;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #contact form input:focus,
+        textarea:focus {
+            border: 1px solid #d9a729;
+        }
+
+        iframe {
+            height: 90%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        #contact button {
+            width: fit-content;
+            padding: 8px 40px;
+            background-color: #111;
+            border: 1px solid #111;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+            align-items: center;
+        }
+
+        #contact button:hover {
+            letter-spacing: 1px;
+            background-color: #d07214;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .social-icons img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .phone {
+            font-size: 18px;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #100c0c;
+        }
+
+        @media (max-width: 700px) {
+            .social-icons {
+                margin-bottom: 10px;
+            }
+            .social-icons a {
+                font-size: 20px;
+            }
+            .phone {
+                font-size: 11px;
+            }
+        }
+
+        #telephone {
+            display: none;
+        }
+
+        img:hover + #telephone {
+            display: inline;
+            text-decoration: none;
+            color: white;
+        }
+
+        .question p {
+            font-size: 1em;
+            margin: 2%;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        #home {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), #333), url("./paris.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        #home h2 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            -webkit-text-stroke: #fff 0.05px;
+            color: transparent;
+            text-transform: lowercase;
+        }
+
+        #home h4 {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        #home p {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 15px;
+            padding-left: 11%;
+        }
+
+        .home-btn {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            color: #b1702f;
+        }
+
+        .navbar-brand span {
+            color: #d07214;
+        }
+
+        .custom-btn {
+            color: #fff !important;
+            font-size: 14px !important;
+            border: 2px solid #d07214 !important;
+            padding: 5px 20px !important;
+            transition: 0.3s !important;
+            background-color: #100f0e !important;
+        }
+
+        .custom-btn:hover {
+            background-color: #d07214 !important;
+        }
+
+        .btn {
+            color: #f9ece0 !important;
+            background-color: #100c0c !important;
+            border: #d07214 !important;
+        }
+
+        .btn:hover {
+            background-color: #d07214 !important;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+        }
+
+        i {
+            visibility: hidden;
+            color: green;
+        }
+
+
+        
+       

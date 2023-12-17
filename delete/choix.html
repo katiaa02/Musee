@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="choix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://alwaysdata1.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='//cdn.matomo.cloud/alwaysdata1.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  
+</head>
+<body>
+    
+    <div id="searchContainer">
+             <div id="selectville" >
+                <h1 class="titre">MuséeVasion</h1>
+                <label for="citySelect">Choisissez une ville :</label>
+                <form action="recherche.php" method="GET">
+                    <label for="citySelect">Choisissez une ville :</label>
+                    <select id="citySelect" name="ville">
+                        <option value="Paris">Paris</option>
+                        <option value="Marseille">Marseille</option>
+                        <option value="Lyon">Lyon</option>
+                        <option value="Nice">Nice</option>
+                        <!-- Ajoutez d'autres options pour d'autres villes si nécessaire -->
+                    </select>
+                    <button type="submit">Rechercher</button>
+                </form>
+                
+             <div id="museumList"></div>
+          
+            
+               
+            </div>
+      </div>
+                 
+                 
+      
+    <div class="container">
+        <div id="slide">
+            <div class="item" style="background-image: url(photom/1.jpg);">
+                <div class="content">
+                    
+                    
+                </div>
+            </div>
+
+            
+            <div class="item" style="background-image: url(photom/2.jpg);">
+                <div class="content">
+                   
+                </div>
+            </div>
+            <div class="item" style="background-image: url(photom/3.jpg);">
+                <div class="content">
+                  
+                </div>
+            </div>
+            <div class="item" style="background-image: url(photom/4.jpg);">
+                <div class="content">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script src="choix.js"></script>
+</body>
+</html>

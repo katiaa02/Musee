@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuséEvasion</title>
+    <link rel="icon" type="img/ico" href="./fav.ico"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("./paris.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.05px;
+    color: transparent;
+    text-transform: lowercase;
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-left: 11%;
+}
+.home-btn {
+    margin-bottom: 20px ;
+    color: #fff;
+}
+.navbar-brand {
+    font-size: 25px;
+    color: #b1702f;
+}
+.navbar-brand span {
+    
+    color: #d07214;
+}
+.custom-btn {
+    color: #fff !important;
+    font-size: 14px !important;
+    border: 2px solid #d07214 !important;
+    padding: 5px 20px !important;
+    transition: 0.3s !important;
+    background-color: #100f0e !important;
+}
+
+.custom-btn:hover {
+    background-color: #d07214 !important;
+}
+
+.btn {
+    color: #f9ece0 !important;
+    background-color: #100c0c !important;
+    border: #d07214 !important;
+}
+
+.btn:hover {
+    background-color: #d07214 !important;
+}
+.icon{
+display: flex;
+flex-direction: row;    
+
+}
+#contact1{
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    
+}
+#contact1 .p{
+align-items: center;
+}
+#contact {
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 80%;
+   
+}
+.leftandright{
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ 
+}
+#contact form {
+    background-color:#999;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-right .left , .left-right {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600
+}
+#contact form input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+#contact form input:focus , textarea:focus {
+    border: 1px solid #d9a729;
+}
+iframe {
+    height: 90%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#contact button {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    align-items: center;
+}
+#contact button:hover {
+    letter-spacing: 1px;
+    background-color: #d07214;
+}
+/* Styles de base pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+
+/* Styles pour les icônes de réseaux sociaux */
+
+.social-icons img{
+    height: 40px;
+    width:40px ;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Styles pour le numéro de téléphone */
+.phone {
+    font-size: 18px;
+}
+.question{
+    font-weight: bold;
+    color: #100c0c;
+
+}
+
+/* Styles spécifiques aux petits écrans */
+@media (max-width: 700px) {
+    .social-icons {
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .phone {
+        font-size: 11px;
+    }
+}
+#telephone {
+            display: none; /* Le numéro est initialement masqué */
+        }
+
+        img:hover + #telephone {
+            display: inline; /* Afficher le numéro lorsque l'image est survolée */
+            text-decoration: none;
+            color: white;
+        }
+        .question{
+            p {
+    font-size: 1em; /* Taille de police relative */
+    margin: 2%;    /* Marge relative en pourcentage */
+}
+        }
+
+    </style>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://alwaysdata2.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='//cdn.matomo.cloud/alwaysdata2.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+  
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"> <span>MUsée</span>VASION</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a-propos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular-destination">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+                <button class="btn custom-btn ml-auto"> <div class="icon"><span class="material-symbols-outlined">
+                    person
+                    </span> &nbsp; Se connecter</button></div>
+            </div>
+        </nav>
+        
+    </header>
+    <section id="home">
+        <h2>Explorez</h2>
+        <h4>&nbsp;Découvrez l'art, la culture et l'histoire à l'infini.</h4>
+        <p>&nbsp;Plongez dans l'univers de la connaissance et de l'inspiration sur notre site, où chaque clic ouvre une porte vers la découverte.</p>
+       
+       
+       <a href="#"> <button class="btn btn-primary exp">Explorez Maintenant</button></a>
+       
+       
+    </section>
+    <section id="contact1">
+        <h2>Besoin d'aide ?</h2>
+        <p class="question">Une question ? Une suggestion ? Votre voix compte ! Partagez avec nous, nous sommes là pour vous écouter</p>
+       <section id="contact">
+         <form action="">
+         <div class="leftandright">   
+        <div class="left-right">
+           
+          
+            <div class="left">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Prénom">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="E-MAIL">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Suggestion</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Votre suggestion">
+                  </div>
+               </div>
+               <button>Envoyer</button>
+                 
+            </div>
+            <div class="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.298916844018!2d2.081427875933529!3d49.042939787702174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f53e0206f165%3A0x4b40f807318bbdc8!2sCY%20Cergy%20Paris%20Universit%C3%A9%20-%20Site%20de%20Saint-Martin!5e0!3m2!1sfr!2sfr!4v1697813700197!5m2!1sfr!2sfr"  width="100%" height="1700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<br><br>
+        </div>
+        </div>
+     
+    </form>
+   
+    
+</section>
+
+
+</section>
+<footer>
+    <a class="navbar-brand" href="#"> <span>MUsée</span>VASION</a>
+    <div class="social-icons">
+        <a href="#"><img src="./facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="./twitter.jpg" alt="Twitter"></a>
+        <a href="#"><img src="../Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="./tel.png" alt="telephone"> <span id="telephone">Numéro de téléphone : +123 456 789</span></a>
+       
+    </div>
+   
+</footer>
+</section>
+
+   
+    <!-- Scripts Bootstrap (jQuery et Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
